@@ -9,3 +9,31 @@
  <a href="page2.html">Son histoire</a>
 </body>
 </html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affichage d'une image après délai</title>
+    <style>
+        /* L'image sera cachée initialement */
+        #image {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue sur mon site!</h1>
+
+    <!-- L'image qui apparaîtra après quelques secondes -->
+    <img id="image" src="https://images.sftcdn.net/images/t_app-icon-m/p/d1bbd94c-1c33-42d2-ab25-c570132a073f/4094990728/john-pork-is-calling-logo" alt="John Pork Is Calling" width="500">
+
+    <script>
+        // Fonction pour afficher l'image après un délai de 3 secondes (3000 ms)
+        setTimeout(function() {
+            document.getElementById("image").style.display = "block";
+        }, 3000); // 3000 ms = 3 secondes
+    </script>
+
+</body>
+</html>
