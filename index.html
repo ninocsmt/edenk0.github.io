@@ -1,23 +1,86 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>John Pork</title>
-</head>
-<body>
-<h1>JOHN PORK</h1>
- <body style="background-color: #f792d9;">
-</body>
-</html>
+<!DOCTYPE html> 
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .image-principale {
+      max-width: 100vw;
+      max-height: 100vh;
+      height: auto;
+      width: auto;
+      display: block;
+    }
+
+    .button {
+      position: absolute;
+      bottom: 8px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      color: white;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+
+    .green {
+      left: 10px;
+      background-color: #4CAF50;
+    }
+
+    .red {
+      right: 10px;
+      background-color: #F44336;
+    }
+
+  </style>
 </head>
 <body>
 
-    <!-- L'image qui apparaîtra après quelques secondes -->
-    <img id="image" src="https://images.sftcdn.net/images/t_app-icon-m/p/d1bbd94c-1c33-42d2-ab25-c570132a073f/4094990728/john-pork-is-calling-logo" alt="John Pork Is Calling" width="300">
-<p><a href="page2.html">Son histoire</a></p>
+  <div class="container">
+    <img src="john-pork-is-calling.png" alt="Image d'accueil" class="image-principale">
+    <a href="page2.html" class="button green">
+        <span style="filter: brightness(10);">📞</span>
+    </a>      
+      
+   <a href="page3.html" class="button red">
+     <span style="filter: brightness(10);">📞</span>
+    </a>
+      
+      
+  </div>
+
 </body>
 </html>
+
+
