@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-<title>John Pork</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appel en cours...</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+
+    .name {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .status {
+      margin-top: 5px;
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    .buttons {
+      margin-top: 50px;
+      display: flex;
+      gap: 30px;
+    }
+
+    .btn {
+      background-color: #333;
+      border: none;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .btn.red {
+      background-color: #f44336;
+    }
+  </style>
 </head>
-<body style="background-color: #f792d9;">
-<h1>SON HISTOIRE</h1>
-<p> <a href="page3.html">Qui est John Pork</a> </p>
-<p> <a href="page4.html">Qui est Tim Cheese</a> </p>  
-<p> <a href="page5.html">Quel est le conflit</a> </p>
+<body>
+
+  <img src="johnpork-visage.jpg" alt="John Pork" class="avatar">
+  <div class="name">John Pork</div>
+  <div class="status">Appel en cours...</div>
+
+  <div class="buttons">
+    <button class="btn" onclick="alert('impossible de mute john pork')">🔇</button>
+    <button class="btn" onclick="alert('John est déjà en haut-parleur.')">🔊</button>
+    <button class="btn" onclick="alert('Vidéo indisponible. Trop de cochon.')">📹</button>
+    <button class="btn red" onclick="window.location.href='page3.html'">
+        <span style="filter: brightness(10);">📞</span> 
+    </button>
+  </div>
+
+</body>
+</html>
